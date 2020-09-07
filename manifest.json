@@ -1,0 +1,16 @@
+{
+    "name": "Block User Posts",
+    "version": "1.0",
+    "description": "Sollu extension for sollu work!",
+    "background":
+    {
+        "scripts": ["/jquery.js","/hide_user_post_script.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://www.andhrafriends.com/*"],
+            "js": ["/jquery.js","/hide_user_post_script.js"]
+        }
+    ],
+    "manifest_version": 2
+  }
