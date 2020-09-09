@@ -1,4 +1,6 @@
+console.log("**Begin**");
 if ('serviceWorker' in navigator) {
+  console.log("**Service worker found**");
   navigator.serviceWorker.register('./hide_user_post_script.js', {scope: './'})
   .then((reg) => {
     // registration worked
@@ -8,3 +10,4 @@ if ('serviceWorker' in navigator) {
     console.log('Registration failed with ' + error);
   });
 }
+console.log("**End**");
